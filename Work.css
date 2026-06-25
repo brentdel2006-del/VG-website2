@@ -366,3 +366,204 @@ body {
 .more-btn:hover {
   background: #ff1e0a;
 }
+/*start of footer*/
+.experience-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 32px 50px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 65px;
+}
+/* Both large headings */
+.experience-section h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 66px;
+  line-height: 1;
+  font-weight: normal;
+  color: #202124;
+  margin-bottom: 65px;
+}
+/* Left-side paragraph */
+.experience-column > p {
+  max-width: 980px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: #777777;
+  margin-bottom: 50px;
+}
+
+/* MORE button */
+.more-button {
+  display: inline-block;
+  padding: 10px 12px;
+
+  background-color: #111111;
+  color: #ffffff;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.more-button:hover {
+  background-color: #ff2415;
+}
+
+/* Quote box */
+.quote-box {
+  position: relative;
+  background-color: #f1f1f1;
+  padding: 32px 40px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7px;
+  line-height: 1.55;
+  font-weight: 600;
+  font-style: italic;
+  color: #111111;
+
+  margin: 0 0 52px;
+}
+
+/* Triangle underneath quote box */
+.quote-box::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -23px;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 23px solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 23px solid #f1f1f1;
+}
+
+/* Author name */
+.quote-author {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  color: #222222;
+}
+@media (max-width: 10000000px) {
+  .experience-section {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-section h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .experience-column > p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 60000000000px) {
+  .experience-section {
+    padding: 30px 20px;
+    gap: 60px;
+  }
+
+  .experience-section h2 {
+    font-size: 42px;
+  }
+
+  .experience-column > p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .quote-box {
+    padding: 25px;
+    font-size: 20px;
+  }
+}
+
+/* site footer */
+.site-footer {
+  width: 100%;
+  min-height: 135px;
+  padding: 48px 20px 30px;
+  background-color: #e7e7e7;
+  text-align: center;
+}
+
+.footer-copy {
+  margin: 0 0 12px;
+  color: #252525;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.footer-copy a {
+  color: #252525;
+  text-decoration: none;
+}
+
+.footer-copy a:hover {
+  color: #ff2415;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.footer-nav a {
+  color: #999999;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.footer-nav a.active {
+  color: #252525;
+}
+
+.footer-nav a:hover {
+  color: #ff2415;
+}
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+@media (max-width: 600px) {
+  .footer-nav {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+
+  .footer-nav a {
+    font-size: 16px;
+  }
+
+  .site-footer {
+    padding: 35px 15px;
+  }
+}
+
+/*end of footer*/

@@ -102,3 +102,131 @@ html{
 }
 
 /*end site navagation*/
+
+/*start of slide show*/
+
+/*end of slide show*/
+
+/*start of footer*/
+.experience-section {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 32px 50px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 65px;
+}
+/* Both large headings */
+.experience-section h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 66px;
+  line-height: 1;
+  font-weight: normal;
+  color: #202124;
+  margin-bottom: 65px;
+}
+/* Left-side paragraph */
+.experience-column > p {
+  max-width: 980px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  line-height: 1.7;
+  font-weight: 600;
+  color: #777777;
+  margin-bottom: 50px;
+}
+
+/* MORE button */
+.more-button {
+  display: inline-block;
+  padding: 17px 37px;
+
+  background-color: #111111;
+  color: #ffffff;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 35px;
+  text-decoration: none;
+}
+
+.more-button:hover {
+  background-color: #ff2415;
+}
+
+/* Quote box */
+.quote-box {
+  position: relative;
+  background-color: #f1f1f1;
+  padding: 32px 40px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 27px;
+  line-height: 1.55;
+  font-weight: 600;
+  font-style: italic;
+  color: #111111;
+
+  margin: 0 0 52px;
+}
+
+/* Triangle underneath quote box */
+.quote-box::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -23px;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 23px solid transparent;
+  border-right: 23px solid transparent;
+  border-top: 23px solid #f1f1f1;
+}
+
+/* Author name */
+.quote-author {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 28px;
+  color: #222222;
+}
+@media (max-width: 1000px) {
+  .experience-section {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-section h2 {
+    font-size: 52px;
+    margin-bottom: 35px;
+  }
+
+  .experience-column > p {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    padding: 30px 20px;
+    gap: 60px;
+  }
+
+  .experience-section h2 {
+    font-size: 42px;
+  }
+
+  .experience-column > p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .quote-box {
+    padding: 25px;
+    font-size: 20px;
+  }
+}
+/*end of footer*/
